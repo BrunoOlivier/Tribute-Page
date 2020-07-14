@@ -1,0 +1,200 @@
+:root {
+    --main-font-family: 'Open Sans Condensed';                       
+}
+
+/* CSS do container principal */
+#main {
+    background-color: rgb(255, 252, 239);
+    margin: 30px 8px;
+    border-radius: 12px;
+}
+
+/* CSS do título e subtítulo */
+#title {
+    text-align: center;
+    font-family: var(--main-font-family, sans-serif);
+    font-size: 40px;
+    padding-top: 32px;
+}
+
+#subtitle {
+    text-align: center;
+    font-family: var(--main-font-family, sans-serif);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    padding: 8px 0 30px;
+}
+
+/* CSS da imagem */
+#img-div {
+    background-color: white;
+    margin: 0 18px;
+    border-radius: 12px;
+}
+
+#image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;  
+}
+
+#img-caption {
+    text-align: center;
+    padding: 10px 0 20px;
+    font-family: var(--main-font-family, sans-serif);
+    font-size: 18px;
+}
+
+/* CSS do conteúdo */
+#tribute-info {
+    width: 545px;
+    margin: 0 auto;
+}
+
+#tribute-info h2 {
+    text-align: center;
+    padding: 44px 0;
+    font-family: var(--main-font-family, sans-serif);
+}
+
+#tribute-info li {
+    line-height: 36px;
+    font-family: var(--main-font-family, sans-serif);
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+#blockquote {
+    width: 680px;
+    margin: 0 auto;
+    padding: 30px 0 50px;
+    font-family: var(--main-font-family, sans-serif);
+    font-size: 18px;
+    font-style: italic;
+}
+
+#blockquote p {
+    padding-bottom: 14px;
+}
+
+/* CSS do link inferior */
+#footer {
+    font-family: var(--main-font-family, sans-serif);
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: rgb(142, 186, 253);
+}
+
+#tribute-link:hover {
+    font-size: 23px;
+}
+
+/* ----------------------- MEDIA QUERIE 0 ~ 425px wide ----------------------- */
+
+@media (max-width: 425px) {
+    #main {
+        width: 660px;
+    }
+    #title {
+        font-size: 48px;
+    }
+    #subtitle {
+        font-size: 28px;
+    }
+    #img-caption {
+        font-size: 24px;
+    }
+    #tribute-info h2 {
+        font-size: 30px;
+    }
+    #tribute-info li {
+        font-size: 28px;
+        list-style: none;
+        padding-bottom: 24px;
+    }
+    #blockquote {
+        font-size: 30px;
+        padding: 20px 20px 30px;
+    }
+    #footer {
+        font-size: 30px;
+    }
+}
+
+/* ----------------------- MEDIA QUERIE 1440px ~ 2560px wide ----------------------- */
+
+@media (min-width: 1440px) {
+    #title {
+        font-size: 58px;
+    }
+    #subtitle {
+        font-size: 32px;
+    }
+    #image {
+        max-width: 1280px;
+    }
+    #img-caption {
+        font-size: 26px;
+    }
+    #tribute-info {
+        width: 865px;
+    }
+    #tribute-info h2 {
+        font-size: 36px;
+    }
+    #tribute-info li {
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+    #blockquote {
+        width: 1000px;
+        font-size: 30px;
+        padding: 20px 20px 50px;
+    }
+    #footer {
+        font-size: 30px;
+    }
+}
+
+/* ----------------------- MEDIA QUERIE 2560px ~ + wide ----------------------- */
+
+@media (min-width: 2560px) {
+    #title {
+        font-size: 88px;
+    }
+    #subtitle {
+        font-size: 44px;
+    }
+    #image {
+        max-width: 1900px;
+    }
+    #img-caption {
+        font-size: 42px;
+    }
+    #tribute-info {
+        width: 1366px;
+    }
+    #tribute-info h2 {
+        font-size: 44px;
+    }
+    #tribute-info li {
+        font-size: 42px;
+        padding-bottom: 40px;
+        line-height: 62px;
+    }
+    #blockquote {
+        width: 1800px;
+        font-size: 52px;
+        padding: 30px 20px 80px;
+    }
+    #footer {
+        font-size: 48px;
+    }
+}
